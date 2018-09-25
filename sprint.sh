@@ -1,5 +1,6 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 OPTIND=1
+export LANG=en_US.UTF-8
 
 ## User defaults
 PRINTER="HP_Officejet_4620"
