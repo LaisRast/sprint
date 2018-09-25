@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 OPTIND=1
-export LANG=en_US.UTF-8
 
 ## User defaults
 PRINTER="HP_Officejet_4620"
@@ -162,6 +161,7 @@ fi
 ### Check until file is printed
 echo -e "${BLUE}[$SCRIPT_NAME] Waiting '$FILE_NAME' to be printed.${NC}"
 ssh $USER@$REMOTE /bin/bash << ENDlp
+	export LANG=en_US.UTF-8
 	while [[ -z \$(lpq -P $PRINTER $USER | grep 'no entries') ]]
 	do
 	    lpq -P $PRINTER $USER
