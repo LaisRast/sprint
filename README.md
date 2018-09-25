@@ -4,7 +4,7 @@ A shell script to print over `ssh` using `lp`.
 ## Getting Started
 Download `sprint.sh` to your computer and make it excutable:
 ```
-curl XXX --output sprint.sh
+curl https://raw.githubusercontent.com/LaisRast/sprint/master/sprint.sh --output sprint.sh
 chmod +x sprint.sh
 ```
 Edit the script and set the variables PRINTER, REMOTE and USER.
